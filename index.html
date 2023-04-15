@@ -66,7 +66,6 @@
 								  <li>Taking those sensors to exciting places (scramjet test engines in Ohio)</li>
 								  <li>Improving reference databases (high-temperature H<sub>2</sub>O absorption)</li>
 								</ul>
-								<p>I have included some images I have generated at CU below that highlights the work I am doing in these areas</p>
 								
 								<h3>Building portable optical sensors</h3>
 								<div style="position: relative; width: 80%; margin: 0 auto;">
@@ -79,27 +78,29 @@
 								</div>
 								<div style="height: 10px;"></div>
 								<p>
-								This is our first prototype design for a mobile mid-infrared dual comb that I made in SolidWorks. The enclosure is 19" rack-mountable and will hold all electrical and fiber components (oscillators, pump diodes, amplifiers, etc.) for each frequency comb laser. The light generated in the enclosure spans 1-2 &mu;m. 
+								This is a prototype mobile mid-infrared dual comb. The enclosure is 19" rack-mountable and will hold all electrical and fiber components (oscillators, pump diodes, amplifiers, etc.) for each frequency comb laser. It is patterned after existing near-infrared dual comb spectrometers and generates from 1-2 &mu;m. 
 								</p>
 								<p>
-								The free-space optics on top of the enclosure use intra-pulse Difference Frequency Generation (ip-DFG) to convert the near-infrared light from each frequency comb to mid-infrared spanning 3-5 &mu;m. The beams are then combined and coupled them into mid-infrared fibers. Optical locks are also on the free-space plate.
-								</p>								
+								I designed the free-space optics on top of the enclosure to use intra-pulse Difference Frequency Generation (ip-DFG) to convert the near-infrared light from each frequency comb to mid-infrared light spanning 3-5 &mu;m. The beams are then combined and coupled them into mid-infrared fibers. Optical locks are also on the free-space plate.
+								</p>				
+								
+								<div style="margin-top: 10px; margin-bottom: 10px; max-width: 100%;">
+								  <img src="images/MIR 3 um.jpg" alt="H2O Panel" width="100%" height="auto">
+								</div>
+								<p>
+								We are excited to have a laser spanning 3-5 &mu;m due to the strong absorption by hydrocarbon fuels, combustion products, pollutants, and other chemical species. This is an example spectrum we measured of some hydrocarbons using a GHz repetition rate laser. 
+								</p>
+								
 								<h3>Taking those sensors to exciting places</h3>
 								<div style="margin-top: 10px; margin-bottom: 10px; max-width: 100%;">
 								  <img src="images/ram jet with lasers.png" alt="H2O Panel" width="100%" height="auto">
 								</div>
 								<p>
-								Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+								The Air Force Research Lab has funded the development of this mid-infrared laser to perform diagnostics on ramjet and other hypersonic engines. By comparing our measurement to absorption databases, we can calculate the temperature, pressure, and concentration of various gas species. Velocity is calculated from the Doppler shift by angling the laser beams, as shown above. Using these optically measured properties, we can calculate a total mass flux and species fluxes for the engine.  
 								</p>
-								<div style="margin-top: 10px; margin-bottom: 10px; max-width: 100%;">
-								  <img src="images/MIR 3 um.jpg" alt="H2O Panel" width="100%" height="auto">
-								</div>
-								<p>
-								Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-								</p>
+								
 
 								<h3>Improving reference databases</h3>
-
 
 								<div style="margin-top: 10px; margin-bottom: 10px;">
 								  <svg viewBox="0 15 100 70" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +108,7 @@
 								  </svg> 
 								</div>
 								<p>
-								Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+								Accurate databases are essential for calculating thermodynamic properties using spectral measurements. I am also making a combustion-optimized spectral database of H<sub>2</sub>O absorption from 1.3-1.5 &mu;m. This is one of the 58 measurements I took at various conditions to validate 13 spectral parameters for over 6000 unique absorption transitions. I developed a python wrapper and GUI to interface with a JPL-developed Fortran algorithm to expedite data processing.  
 								</p>
 								<div style="margin: 0 auto;">
 								  <video id="myVideo" loop muted playsinline style="width: 100%; height: auto; object-fit: cover;" poster="images/water data first image.png">
@@ -120,7 +121,9 @@
 								  </div>
 								</div>
 								<div style="height: 10px;"></div>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>
+								This video highlights the power of dual comb spectroscopy to precisely and simultaneously measure broad spectra. An individual frequency comb "tooth" is shown in the context of a broadband spectral measurement. This is the same 1300 K measurement shown above. Dual comb spectroscopy perfectly bridges the gap between low temperature (under 400 K), broadband ( over 1000 cm<sup>-1</sup>) FTIR measurements and high-temperature (over 1000 K), broadband (under 5 cm<sup>-1</sup>) tunable diode laser measurements, making it the ideal spectrometer for broadband, high-temperature database development. 
+								</p>
 							</article>
 
 						<!-- Contact -->
