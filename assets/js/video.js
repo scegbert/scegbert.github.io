@@ -4,7 +4,6 @@
 	
 */
 
-
 const myVideo = document.querySelector("#myVideo");
 const playButton = document.querySelector("#playButton");
 const videoSlider = document.querySelector("#videoSlider");
@@ -21,17 +20,24 @@ playButton.addEventListener("click", function() {
   }
 });
 
+function updateVideoSlider() {
+  const currentTime = myVideo.currentTime;
+  const duration = myVideo.duration;
+  const value = (currentTime / duration) * 100;
+  videoSlider.value = value;
+
+  if (!myVideo.paused && !myVideo.ended) {
+    setTimeout(updateVideoSlider, 100); // update every 100ms = 10 times per second
+  }
+}
+
 videoSlider.addEventListener("input", function() {
   const value = this.value;
   myVideo.currentTime = myVideo.duration * (value / 100);
 });
 
-myVideo.addEventListener("timeupdate", function() {
-  const currentTime = myVideo.currentTime;
-  const duration = myVideo.duration;
-  const value = (currentTime / duration) * 100;
-  videoSlider.value = value;
+myVideo.addEventListener("play", function() {
+  setTimeout(updateVideoSlider, 100);
 });
-
 
 
