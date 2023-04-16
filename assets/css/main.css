@@ -1355,7 +1355,7 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					width: 100%;
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
@@ -1387,39 +1387,6 @@ input, select, textarea {
 		#header nav.use-middle ul li.is-middle {
 			border-left: 0;
 		}
-
-		#header nav ul li a {
-		  position: relative; /* add relative positioning to create a reference for the absolute positioning of the ::before and ::after pseudo-elements */
-		}
-
-		#header nav ul li a::before,
-		#header nav ul li a::after {
-		  content: "";
-		  position: absolute;
-		  bottom: 0;
-		  width: 50%;
-		  height: 3px;
-		  background-color: rgba(255, 255, 255, 0.075);
-		  transition: width 0.3s ease-in-out;
-		}
-
-		#header nav ul li a::before {
-		  left: 0;
-		}
-
-		#header nav ul li a::after {
-		  right: 0;
-		}
-
-		#header nav ul li a:hover::before,
-		#header nav ul li a:hover::after,
-		#header nav ul li.current-menu-item a::before,
-		#header nav ul li.current-menu-item a::after {
-		  width: 100%;
-		}
-
-
-
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
