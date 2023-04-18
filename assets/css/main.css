@@ -1656,3 +1656,47 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		
+		
+/* fun bullets */
+
+ul.connect-icons {
+  list-style: none;
+  padding: 0;
+}
+
+ul.connect-icons li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+ul.connect-icons li:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+ul.connect-icons li .fa-linkedin:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f08c";
+}
+
+ul.connect-icons li .fa-github:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+}
+
+ul.connect-icons li .fa-id-card:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2c2";
+}
+
+ul.connect-icons li .fa-google:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f1a0";
+}
+
+			
