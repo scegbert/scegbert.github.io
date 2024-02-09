@@ -59,7 +59,7 @@
 								Welcome to my personal website! I am a Ph.D. student in Greg Rieker's Precision Laser Diagnostics Lab at the University of Colorado Boulder. My specialization includes experimental optical diagnostics, laser system design and ruggedization, scientific computing, and optomechanical engineering. I am passionate about exploring ways to ruggedize groundbreaking optical technology so that it can move out of the optics lab and into the environments where it is needed the most.
 								</p>
 								<p>
-								This website is a platform for me to share <a href="#experience">cool pictures and videos</a> that highlight my experiences, provide some <a href="#connect">links to connect</a> with like-minded people, and (mostly) host <a href="images/ScottEgbertResume.pdf">my CV</a> online. As a soon-to-graduate Ph.D. student, I am excited to continue my career in the field of optomechanical engineering. Thank you for visiting my website, I look forward to connecting with you!
+								This website is a platform for me to share <a href="#experience">cool pictures and videos</a> that highlight my experiences, provide some <a href="#connect">links to connect</a>, and (mostly) host <a href="images/ScottEgbertResume.pdf">my CV</a> online. After finishing my Ph.D. in March 2024, I am excited to continue my career in the field of optics. Thank you for visiting my website, I look forward to connecting with you!
 								</p>							
 							</article>
 							
@@ -68,12 +68,12 @@
 								<h2 class="major">Research Experience</h2>
 								<p>My research focuses on optical measurements of real-world systems, specifically in three main areas:</p>
 								<ul>
-								  <li>Designing and building a portable mid-infrared dual comb spectrometer</li>
+								  <li>Designing and building portable mid-infrared frequency comb lasers</li>
 								  <li>Performing diagnostics on ramjets, atmospheric pollutants, etc.</li>
 								  <li>Developing a combustion-optimized spectral database of H<sub>2</sub>O absorption</li>
 								</ul>
 								
-								<h3>Designing a Portable Spectrometer</h3>
+								<h3>Designing Portable Frequency Comb Lasers</h3>
 								
 								<div style="position: relative; width: 80%; margin: 0 auto;">
 								  <div style="padding-bottom: 60%; position: relative;">
@@ -85,10 +85,10 @@
 								</div>
 								<div style="height: 10px;"></div>
 								<p>
-								This is a prototype mobile mid-infrared dual comb. The enclosure is 19" rack-mountable and will hold all electrical and fiber components (oscillators, pump diodes, amplifiers, etc.) for each frequency comb laser. It is patterned after existing near-infrared dual comb spectrometers and generates light from 1-2 μm. 
+								While at the University of Colorado, I have led the design, construction, and optimization of ultrashort pulsed laser systems from lab-based R&D efforts to robust, deployable products. After completing my Master's degree in passive IR sensing with an internship using Nd:YAG laser measurements at Sandia National Labs, I worked with Nazanin Hoghooghi, Scott Diddams, and Peter Chang at NIST, Boulder to develop a new frequency comb laser source for high-speed molecular spectroscopy. Shown above is the portable version of this laser that I designed in Solidworks. The enclosure is 19" rack-mountable and will hold all electrical and fiber components (oscillators, pump diodes, amplifiers, etc.) for each frequency comb laser. It is patterned after existing near-infrared dual comb spectrometers and generates light from 1-2 μm. 							
 								</p>
 								<p>
-								To convert the near-infrared light from each frequency comb to mid-infrared light spanning 3-5 μm, we use intra-pulse Difference Frequency Generation (ip-DFG), a technique developed by the Diddams group at CU. I designed a robust and compact version of the free-space optics (currently floating on top of the enclosure). These optics will eventually be protected in their own enclosure. The generated beams are then combined and coupled into mid-infrared fibers that can be routed to the measurement. 
+								To convert the near-infrared light from each frequency comb to mid-infrared light spanning 3-5 μm, we use Intra-Pulse Difference Frequency Generation (IP-DFG), a technique developed by the Diddams group at CU. The generated beams are then combined and coupled into mid-infrared fibers that can be routed to the measurement. My SolidWorks design shrunk the footprint by over 40% and will enable these optics to escape the optics lab for the first time. The laser will soon enable the first broadband, mid-infrared dual comb spectroscopy measurements of hypersonic engines and wildfires.
 								</p>				
 																
 								<div style="margin-top: 10px; margin-bottom: 10px; max-width: 100%;">
@@ -118,7 +118,7 @@
 								Accurate spectral databases are crucial for calculating thermodynamic properties from spectral measurements. Dual comb spectroscopy is an ideal spectrometer for broadband, high-temperature database development, as it perfectly bridges the gap between low temperature (under 400 K), broadband (over 1000 cm<sup>-1</sup>) FTIR measurements and high-temperature (over 1000 K), narrow (under 5 cm<sup>-1</sup>) tunable diode laser measurements.
 								</p>
 								<p>
-								To this end, I am developing a combustion-optimized spectral database of H<sub>2</sub>O absorption from 1.3-1.5 μm. I collected 58 measurements under various conditions to validate 13 unique spectral parameters for over 6,000 absorption transitions. To expedite data processing, I developed a python wrapper and GUI to interface with a JPL-developed Fortran algorithm used to process absorption measurements.  
+								After optimizing our frequency comb lasers and high-temperature vacuum system to measure broadband H<sub>2</sub>O absorption from 1.3-1.5 μm, I needed to automate the analysis of the over 20,000 spectral absorption parameters that I had measured. To solve this challenge, I created a simplified Python-based graphical user interface for exploring the data, enabling me to work almost 500 times faster than prior students without sacrificing database quality. This database improves our understanding of high-temperature H<sub>2</sub>O absorption in the near-infrared. We have already seen a 23x reduction in measurement error when using this database for the hypersonics measurements we took with the AFRL and are excited to see other applications for this high-temperature database.  
 								</p>
 								<div style="margin: 0 auto;">
 								  <video id="myVideo" loop muted playsinline style="width: 100%; height: auto; object-fit: cover;" poster="images/water data first image.png">
