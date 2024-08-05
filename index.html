@@ -80,14 +80,19 @@
 								<p>
 								Working closely with Nazanin Hoghooghi, Scott Diddams, and Peter Chang at NIST, Boulder, I helped develop a new frequency comb laser source for measuring high-speed, multi-species molecular absorption spectroscopy in the MIR. We took our first measurements in a shock tube, where we could meausure formaldehyde decomposing into carbon monoxide at microsecond timescales, as shown in the GIFs below. 
 								</p>
-								<div style="margin-bottom: 10px; max-width: 20%;">
-								  <img src="images/Shock Tube time.gif" width="100%" height="auto">
-								</div>
-								<div style="margin-bottom: 10px; max-width: 70%;">
-								  <img src="images/Shock Tube H2CO.gif" width="100%" height="auto">
-								</div>
-								<div style="margin-bottom: 10px; max-width: 100%;">
-								  <img src="images/Shock Tube CO.gif" width="100%" height="auto">
+								<div style="margin-bottom: 10px; max-width: 100%; text-align: center; background-color: white;">
+									<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+										<img src="images/MIR/Shock Tube Reaction.svg" width="50%" height="auto" style="display: block; margin: 0 auto;">
+									</div>
+									<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+										<img src="images/MIR/Shock Tube Time.gif" width="20%" height="auto" style="display: block; margin: 0 auto;">
+									</div>
+									<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+										<img src="images/MIR/Shock Tube H2CO.gif" width="80%" height="auto" style="display: block; margin: 0 auto;">
+									</div>
+									<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+										<img src="images/MIR/Shock Tube CO.gif" width="100%" height="auto" style="display: block; margin: 0 auto;">
+									</div>
 								</div>
 								<p>
 								After using this spectrometer to determind chemical kinetics parameters, I led the design and construction of the next-generation of laser, our first portable mid-infrared dual comb spectrometer (DCS), shrinking the footprint from an entire optical table to a few 19" rack-mountable boxes, as shown below. 
@@ -104,21 +109,18 @@
 								<p>
 								This is the first iteration of our design. The black box contains all electrical and fiber components (erbium fiber oscillators at 200 MHz, pump diodes, erbium-doped amplifiers, etc.) for each frequency comb laser, outputting femtosecond pulses of light 1-2 μm. We then use Intra-Pulse Difference Frequency Generation (IP-DFG), a technique developed by the Diddams group at NIST, in a bulk crystal PPLN to convert the near-infrared light from each frequency comb to mid-infrared light simultaneously spanning 3-5 μm. The generated pulses are combined and coupled into a mid-infrared optical fiber that can be routed to the measurement. My SolidWorks design shrunk the footprint by over 80% and is currently being used to generate MIR light, as shown below. When we're done, the lasers will be packaged for easy transportation to hypersonic engine test fascilities, the arctic, and wherever our measurements are needed. 
 								</p>
-								<div style="margin-bottom: 10px; max-width: 100%;">
-								  <img src="images/Applications.png" alt="H2O Panel" width="100%" height="auto">
+								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+									<img src="images/MIR free space.jpg" width="60%" height="auto" style="display: block; margin: 0 auto;">
 								</div>
-								<h3>Combustion-Optimized Spectral Databases</h3>
-
-								<div style="margin-top: 10px; margin-bottom: 10px;">
-								  <svg viewBox="0 15 100 70" xmlns="http://www.w3.org/2000/svg">
-									<image xlink:href="images/H2Opanel.svg" width="100" height="100"/>
-								  </svg> 
-								</div>
+								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+									<img src="images/MIR amps.jpg" width="80%" height="auto" style="display: block; margin: 0 auto;">
+								</div>							
+								
+								
+								<h3>Improving Spectral Databases</h3>
 								<p>
-								Accurate spectral databases are crucial for calculating thermodynamic properties from spectral measurements. Dual comb spectroscopy is an ideal spectrometer for broadband, high-temperature database development, as it perfectly bridges the gap between low temperature (under 400 K), broadband (over 1000 cm<sup>-1</sup>) FTIR measurements and high-temperature (over 1000 K), narrow (under 5 cm<sup>-1</sup>) tunable diode laser measurements.
+								Accurate spectral databases are crucial for calculating thermodynamic properties from spectral measurements. Because dual comb spectroscopy (DCS) bridges the gap between low temperature (under 400 K), broadband (over 1000 cm<sup>-1</sup>) FTIR measurements and high-temperature (over 1000 K), narrow (under 5 cm<sup>-1</sup>) tunable diode laser measurements, it is the ideal spectrometer for validating and improving spectral databases. Shown below is one of the 58 measurements that I took to improve our understading of H<sub>2</sub>O absorption from 1.3-1.5 μm. Notice how DCS captures almost 200,000 spectral datapoints in a single measurement. 
 								</p>
-								<p>
-								After optimizing our frequency comb lasers and high-temperature vacuum system to measure broadband H<sub>2</sub>O absorption from 1.3-1.5 μm, I needed to automate the analysis of the over 20,000 spectral absorption parameters that I had measured. To solve this challenge, I created a simplified Python-based graphical user interface for exploring the data, enabling me to work almost 500 times faster than prior students without sacrificing database quality. This database improves our understanding of high-temperature H<sub>2</sub>O absorption in the near-infrared. We have already seen a 23x reduction in measurement error when using this database for the hypersonics measurements we took with the AFRL and are excited to see other applications for this high-temperature database.  
 								</p>
 								<div style="margin: 0 auto;">
 								  <video id="myVideo" loop muted playsinline style="width: 100%; height: auto; object-fit: cover;" poster="images/water data first image.png">
@@ -131,6 +133,19 @@
 								  </div>
 								</div>
 								<div style="height: 20px;"></div>
+								<p>
+								After optimizing our frequency comb lasers and high-temperature vacuum system to measure broadband H<sub>2</sub>O absorption from 1.3-1.5 μm, I needed to automate the analysis of the over 20,000 spectral absorption parameters that I had measured. To solve this challenge, I created a simplified Python-based graphical user interface for exploring the data, enabling me to work almost 500 times faster than prior students without sacrificing database quality. This database improves our understanding of high-temperature H<sub>2</sub>O absorption in the near-infrared. We have already seen a 23x reduction in measurement error when using this database for the hypersonics measurements we took with the AFRL and are excited to see other applications for this high-temperature database.  
+								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
+									<img src="images/H2O/Labfit Example.gif" width="100%" height="auto" style="display: block; margin: 0 auto;">
+								</div>
+								
+								
+								
+								<div style="margin-top: 10px; margin-bottom: 10px;">
+								  <svg viewBox="0 15 100 70" xmlns="http://www.w3.org/2000/svg">
+									<image xlink:href="images/H2Opanel.svg" width="100" height="100"/>
+								  </svg> 
+								</div>
 								<p>
 								This video showcases the potential of dual comb spectroscopy to precisely and simultaneously measure broad spectra, starting with an individual frequency comb "tooth" before expanding to show the entire measurement. The data shown is from the same 1300 K measurement shown above. 
 								</p>
