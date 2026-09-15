@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Scott Egbert Personal Website</title>
+		<title>Scott Egbert, PhD | Optical Systems Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/imra.css" />
 		<link rel="icon" href="images/supercontinuum.jpg" sizes="32x32">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -26,14 +27,15 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Scott Egbert, PhD</h1>
-								<p>Recent Graduate from Greg Rieker's Precision Laser Diagnostics Lab at CU Boulder <br><br>
-								Frequency Comb Laser Development | Non-Linear Optical System Design | Scientific Computing </p>
+								<p>Research Scientist at IMRA America | Optical Systems Engineer
+								<span class="home-specialties">Stabilized Lasers | Frequency Combs | Optical-to-RF Systems</span></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#experience">Experience</a></li>
+								<li><a href="#imra">IMRA</a></li>
+								<li><a href="#phd">PhD</a></li>
 								<li><a href="images/ScottEgbertResume.pdf" target="_blank">&emsp;&nbsp;&nbsp;CV&emsp;&nbsp;&nbsp;</a></li>
 								<li><a href="#connect">Connect</a></li>
 							</ul>
@@ -41,7 +43,7 @@
 					</header>
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/scott-egbert/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/scegbert" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://github.com/scegbert" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="images/ScottEgbertResume.pdf" target="_blank" class="icon fa-id-card"><span class="label">Resume</span></a></li>
 						<li><a href="https://scholar.google.com/citations?user=s9CybPcAAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">GoogleScholar</span></a></li>
 					</ul>
@@ -53,32 +55,118 @@
 							<article id="intro">
 								<h2 class="major">A Quick Introduction</h2>
 								<div class="container" style="background-color: transparent; text-align: center;">
-								  <img src="images/ScottProfilePic.JPEG" alt="" style="width: 70%; display: inline-block; object-fit: cover;">
+								  <img src="images/ScottProfilePic.JPEG" alt="Scott Egbert" style="width: 70%; display: inline-block; object-fit: cover;">
 								</div>
 								<p>
-								Welcome to my personal website! I am a recent Ph.D. graduate from Greg Rieker's Precision Laser Diagnostics Lab at the University of Colorado, Boulder. I have experience with laser design and fabrication, nonlinear optics, molecular spectroscopy, and absorption linelist development. Even though I spend most of my time with physicists and optical engineers, my mechanical engineering heart is still passionate about ruggedizing new optical technology so that it can move out of the optics lab and be used for new and exciting applications.
-								</p>
-								<p>
-								This website is a platform for me to share <a href="#experience">cool pictures and videos</a> that highlight my experiences, provide some <a href="#connect">links to connect</a>, and (mostly) host <a href="images/ScottEgbertResume.pdf">my CV</a> online. I am excited to continue my career in the field of optics. Thank you for visiting my website, I look forward to connecting with you!
-								</p>							
-							</article>
+								Welcome! I’m Scott, a research scientist at IMRA America’s Boulder Research Lab in Longmont, Colorado. I develop stabilized lasers and precision optical systems, combining fiber and free-space optics, electro-optic modulation, RF electronics, controls, and opto-mechanics. I especially enjoy taking demanding R&amp;D systems, understanding what limits their performance, and turning them into compact hardware that other people can use.
+                                </p>
+                                <p>
+                                At IMRA, my work centers on compact dual-wavelength Brillouin lasers (DWBLs) and the tools needed to characterize and use them. I have integrated these low-noise optical references with electro-optic and Kerr frequency-division systems spanning microwave, millimeter-wave, and terahertz frequencies. My mechanical engineering background shapes how I approach the whole instrument: optical performance, thermal behavior, packaging, controls, characterization, and troubleshooting.
+                                </p>
+                                <p>
+                                Before joining IMRA, I earned my PhD in Mechanical Engineering at CU Boulder in Greg Rieker’s Precision Laser Diagnostics Lab, where I developed portable frequency-comb spectrometers and high-temperature molecular absorption databases. Explore my <a href="#imra">work at IMRA</a> and <a href="#phd">PhD research</a> for examples, or take a look at my <a href="images/ScottEgbertResume.pdf">résumé</a>. I’m always happy to <a href="#connect">connect</a> with people working on interesting optical systems.
+                                </p>
+                            </article>
 							
-						<!-- Experience -->
-							<article id="experience">
-								<h2 class="major">Research Experience</h2>
+
+                        <!-- IMRA -->
+                        <article id="imra">
+                            <h2 class="major">My Work at IMRA</h2>
+                            <p class="imra-role">Research Scientist · Boulder Research Lab</p>
+                            <p>I develop stabilized optical references and the systems that connect their spectral purity to microwave and millimeter-wave signals. My work spans laser stabilization, optical/RF integration, frequency division, phase-noise metrology, and compact packaging. A central thread has been turning IMRA’s dual-wavelength Brillouin laser (DWBL) from a laboratory-scale reference into portable hardware that collaborators can operate independently.</p>
+
+                            <h3>Why develop millimeter-wave sources?</h3>
+                            <p>Electronic millimeter-wave generation often starts with a lower-frequency oscillator and multiplies it upward. Even ideal frequency multiplication raises phase noise by 20log<sub>10</sub>(N), while amplifiers, mixers, and other stages can add still more noise. Maintaining spectral purity becomes increasingly difficult as the carrier frequency rises.</p>
+							<p>DWBLs provide a photonic alternative. Two telecom lasers generate correlated Stokes waves in a shared Brillouin fiber cavity, so common-mode cavity and fiber noise is strongly suppressed in their optical frequency difference. A high-speed photodiode can convert that spacing directly into a millimeter-wave signal, or frequency-comb techniques can divide it to lower frequencies. This creates a useful bridge between optical coherence and RF or millimeter-wave signals.</p>
+							<p>The examples below show several ways our group and collaborators have used that low-noise frequency difference.</p>
+							
+                            <h4>Wireless communication</h4>
+                            <p>High-capacity wireless links are one application for low-noise photonic millimeter-wave sources. The constellation diagrams below show received signals over a 214-meter link using a 300 GHz carrier.</p>
+<figure class="imra-figure">
+      <a href="images/imra/wireless-constellations.png" target="_blank" rel="noopener" aria-label="Open full-size figure: Received 32QAM and 64QAM communication constellations at a 300 GHz carrier"><img src="images/imra/wireless-constellations.png" alt="Received 32QAM and 64QAM communication constellations at a 300 GHz carrier" loading="lazy" /></a>
+      <figcaption>Application example from Maekawa et al. [1]: 32-QAM and 64-QAM transmission at 220 and 180 Gbit/s over a 214 m, 300 GHz wireless link. This demonstration was performed by that research team.</figcaption>
+    </figure>
+                            <h4>Molecular frequency references</h4>
+                            <p>For applications that require long-term frequency stability, the DWBL spacing can be referenced to a molecular rotational transition. This example compares a free-running DWBL with one stabilized to carbonyl sulfide (OCS).</p>
+<figure class="imra-figure">
+      <a href="images/imra/molecular-frequency-reference.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: DWBL frequency versus time, free running and locked to an OCS molecular transition"><img src="images/imra/molecular-frequency-reference.svg" alt="DWBL frequency versus time, free running and locked to an OCS molecular transition" loading="lazy" /></a>
+      <figcaption>DWBL frequency drift before and after stabilization to an OCS rotational transition. Figure reproduced from Greenberg et al. [2].</figcaption>
+    </figure>
+                            <h4>Resonant tunneling diode injection</h4>
+                            <p>A DWBL can also transfer its spectral purity to another oscillator. Injection locking a resonant tunneling diode (RTD) combines the low-noise optical reference with the RTD’s much higher millimeter-wave output power.</p>
+<figure class="imra-figure">
+      <a href="images/imra/rtd-injection.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: RTD spectra showing linewidth narrowing with DWBL injection at 260 GHz"><img src="images/imra/rtd-injection.svg" alt="RTD spectra showing linewidth narrowing with DWBL injection at 260 GHz" loading="lazy" /></a>
+      <figcaption>Free-running and DWBL injection-locked RTD spectra near 260 GHz, measured with 100 kHz resolution bandwidth. Figure reproduced from Greenberg et al. [3].</figcaption>
+    </figure>
+
+                            <h3>Building a portable Brillouin laser</h3>
+                            <p>I led the redesign and ruggedization of IMRA’s passively stabilized DWBL, reducing its volume from 570 to 15 liters while improving its performance. The challenge was not simply fitting the same experiment into a smaller box; it was determining which laboratory-scale components were actually necessary and then validating each simplification against the system-level phase noise and stability.</p>
+<figure class="imra-figure">
+      <a href="images/imra/portable-dwbl.png" target="_blank" rel="noopener" aria-label="Open full-size figure: Portable IMRA dual-wavelength Brillouin laser with integrated touchscreen controls"><img src="images/imra/portable-dwbl.png" alt="Portable IMRA dual-wavelength Brillouin laser with integrated touchscreen controls" loading="lazy" /></a>
+      <figcaption>The 15-liter portable DWBL integrates the optical source, control electronics, monitoring, and touchscreen interface into a rack-mountable platform. Photograph from our IRMMW-THz poster.</figcaption>
+    </figure>
+                            <p>The DWBL produces two narrow optical tones using stimulated Brillouin scattering in a shared fiber cavity. Optical feedback stabilizes the pump diodes, while the common cavity strongly rejects differential environmental noise. Detecting the two tones on a sufficiently fast photodiode produces a millimeter-wave signal at their frequency difference.</p>
+<figure class="imra-figure imra-figure-narrow">
+      <a href="images/imra/dwbl-principle.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Two pump diodes coupled to a shared Brillouin fiber cavity with optical injection feedback"><img src="images/imra/dwbl-principle.svg" alt="Two pump diodes coupled to a shared Brillouin fiber cavity with optical injection feedback" loading="lazy" /></a>
+      <figcaption>Simplified DWBL operating principle. Two pump diodes drive a common Brillouin fiber cavity; the resulting Stokes waves provide both the low-noise optical output and feedback used to stabilize the pumps. Figure reproduced from Heffernan et al. [4].</figcaption>
+    </figure>
+
+                            <p>The original laboratory system also relied on a large vacuum-insulated fiber spool for thermal isolation. I replaced it with compact nested metal enclosures and a noise-canceling spool design. The smaller package preserved short-term phase-noise performance but became more sensitive to HVAC and diurnal temperature changes. We therefore used an MHz-frequency beat generated with an EO comb to track the DWBL spacing and provide an out-of-loop signal for improved thermal control.</p>
+                            <p>I applied the same measurement-driven simplification to the optical-feedback EOMs. I found that nonoptimal injection power and unfiltered modulation sidebands were limiting technical phase noise. Adding spectral filtering and variable attenuation improved performance enough that the EOM no longer required a high-power RF amplifier, eliminating a large heat source and simplifying the portable system.</p>
+
+                            <h3>Measuring the source’s phase noise</h3>
+                            <p>Before optimizing a low-noise source, I want to be sure the measurement actually isolates the quantity I am trying to improve. A conventional two-source phase-noise comparison cannot do that cleanly: the noisier reference at any Fourier frequency can mask an improvement in the device under test.</p>
+                            <p>To address that limitation, our team developed a millimeter-wave cross-correlator. Two independent channels compare one DWBL under test against separate DWBL references, and numerical cross correlation rejects noise that is uncorrelated between the channels. This lets us modify and evaluate one source at a time, which has made design iteration much faster and more quantitative.</p>
+<figure class="imra-figure">
+      <a href="images/imra/cross-correlator.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Two-channel millimeter-wave phase noise cross-correlator with a DWBL device under test and two local oscillators"><img src="images/imra/cross-correlator.svg" alt="Two-channel millimeter-wave phase noise cross-correlator with a DWBL device under test and two local oscillators" loading="lazy" /></a>
+      <figcaption>Two-channel millimeter-wave cross-correlator used to isolate the phase noise of a single DWBL. DUT: device under test; LO: local oscillator; UTC: uni-traveling-carrier photodiode; EDFA: erbium-doped fiber amplifier; VOA: variable optical attenuator. Figure from our IRMMW-THz poster.</figcaption>
+    </figure><figure class="imra-figure">
+      <a href="images/imra/dwbl-phase-noise.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Phase noise at a 260 GHz carrier comparing the 15-liter DWBL with earlier DWBL and scaled electronic sources"><img src="images/imra/dwbl-phase-noise.svg" alt="Phase noise at a 260 GHz carrier comparing the 15-liter DWBL with earlier DWBL and scaled electronic sources" loading="lazy" /></a>
+      <figcaption>Cross-correlated phase noise of the compact DWBL at a 260 GHz carrier. The 10 GHz electronic sources are numerically scaled to 260 GHz assuming noiseless multiplication; they are included for comparison rather than as direct 260 GHz measurements. The plot’s “DWBL ref. [1]” corresponds to Heffernan et al., listed here as [4].</figcaption>
+    </figure>
+                            <p>Using this measurement, I identified changes that improved both low-offset technical noise and the high-offset noise floor. The compact source now reaches below −160 dBc/Hz at 1 MHz offset on a 260 GHz carrier. Just as importantly, the measurement lets us test whether a component can be simplified or removed without hiding the resulting change behind the noise of a second reference.</p>
+
+                            <h3>Transferring optical stability to new frequencies</h3>
+                            <h4>300 GHz through Kerr optical frequency division</h4>
+                            <p>I integrated a compact 3.3 THz DWBL prototype with a Kerr microresonator oscillator to divide the optical frequency separation down to a 300 GHz carrier. The system achieved 135 attosecond RMS timing jitter integrated from 1 kHz to 1 MHz [5], with the results accepted in <em>Nature Photonics</em>.</p>
+                            <h4>Low-noise X-band synthesis</h4>
+                            <p>I implemented and characterized an electro-optic frequency-division system that used an EOM comb and feed-forward noise cancellation to transfer the DWBL’s spectral purity to tunable X-band outputs. The system covered 8–16 GHz and improved the phase noise of a commercial microwave synthesizer by up to 30 dB without the servo-bandwidth constraints of a conventional feedback loop [6].</p>
+<figure class="imra-figure">
+      <a href="images/imra/x-band-phase-noise.svg" target="_blank" rel="noopener" aria-label="Open full-size figure: Phase-noise traces for 8 to 16 GHz outputs using electro-optic frequency division and feed-forward cancellation"><img src="images/imra/x-band-phase-noise.svg" alt="Phase-noise traces for 8 to 16 GHz outputs using electro-optic frequency division and feed-forward cancellation" loading="lazy" /></a>
+      <figcaption>Measured X-band phase noise before and after electro-optic frequency division with feed-forward noise cancellation (eOFD + FF), spanning 8–16 GHz. Figure reproduced from Greenberg et al. [6].</figcaption>
+    </figure>
+
+                            <h3>Making the hardware usable beyond our lab</h3>
+                            <p>I developed the control GUI and standard operating procedures for the portable DWBL systems so that collaborators could independently operate and troubleshoot the hardware. For me, a system is not finished when it makes a good measurement on my bench; the optical performance, packaging, controls, diagnostics, and documentation all need to work for someone else.</p>
+                            <p>For the frequency-comb and spectroscopy work that led me here, see my <a href="#phd">PhD research</a>. You can also view my <a href="images/ScottEgbertResume.pdf" target="_blank" rel="noopener">résumé</a> or <a href="#connect">get in touch</a>.</p>
+
+                            <h3>References</h3>
+                            <ol class="imra-references">
+                                <li>K. Maekawa et al., “Single-carrier 220-Gbit/s sub-THz wireless transmission over 214 m using a photonics-based system,” <em>Optics Letters</em> (2024).</li>
+                                <li>J. Greenberg et al., “Dual wavelength Brillouin laser terahertz source stabilized to carbonyl sulfide rotational transition,” <em>Nature Communications</em> (2025).</li>
+                                <li>J. Greenberg et al., “Terahertz amplification by injection locking of waveguide resonant tunneling diode,” <em>IEEE Journal of Quantum Electronics</em> (2026).</li>
+                                <li>B. M. Heffernan et al., “Brillouin laser-driven terahertz oscillator up to 3 THz with femtosecond-level timing jitter,” <em>Nature Photonics</em> (2024).</li>
+                                <li>S. C. Egbert et al., “Attosecond-timing millimeter waves via Kerr optical frequency division,” accepted in <em>Nature Photonics</em> (2026).</li>
+                                <li>J. Greenberg, S. C. Egbert et al., “Tunable microwave frequency synthesis with optically-derived spectral purity,” <em>Nature Communications</em> (2026).</li>
+                            </ol>
+                        </article>
+
+						<!-- PhD -->
+							<article id="phd">
+								<h2 class="major">PhD Research at CU Boulder</h2>
 								<p>
-								In Greg Rieker's Precision Laser Diagnostics Lab at the University of Colorado, Boulder, we develop new laser sources to measure molecular absorption for a host of applications. I have measured velocity and mass flux through a hypersonic engine and developed absorption reference databases that can help us interpret JWST measurements. Laser spectroscopy is a powerful tool for understanding the composition and properties of a gas without touching it.  
+								In Greg Rieker’s Precision Laser Diagnostics Lab at the University of Colorado Boulder, I developed frequency-comb spectroscopy systems for high-speed and high-temperature gas measurements, along with the molecular databases needed to interpret them. The work combined stabilized fiber combs, nonlinear optics, free-space beam delivery, opto-mechanics, FPGA-based phase correction, and scientific software.
 								</p>
 								<div style="margin-bottom: 10px; max-width: 100%;">
 								  <img src="images/Applications.png" width="100%" height="auto">
 								</div>
 								<p>
-								On this page I will highlight my work designing and building portable mid-infrared frequency comb laser spectrometers and improving the high-temperature fidelity of the HITRAN H<sub>2</sub>O absorption linelist.
+								The examples below focus on two parts of that work: building a portable mid-infrared dual-comb spectrometer and improving high-temperature H<sub>2</sub>O spectroscopy for HITRAN.
 								</p>
 								
-								<h3>Designing Portable Frequency Comb Lasers</h3>
+								<h3>Building a Portable Mid-IR Dual-Comb Spectrometer</h3>
 								<p>
-								Working closely with Nazanin Hoghooghi, Scott Diddams, and Peter Chang at NIST, Boulder, I helped develop a new frequency comb laser source for measuring high-speed, multi-species molecular absorption spectroscopy in the MIR. We took our first measurements in a shock tube, where we could measure formaldehyde decomposing into carbon monoxide at microsecond timescales, as shown in the GIFs below. 
+								Working closely with Nazanin Hoghooghi, Scott Diddams, and Peter Chang at NIST Boulder, I developed and integrated a GHz-repetition-rate mid-infrared dual-comb spectrometer for high-speed, multi-species absorption measurements. In our first shock-tube experiments, we resolved formaldehyde formation and decomposition into carbon monoxide on microsecond time scales.
 								</p>
 								<div style="margin-bottom: 10px; max-width: 100%; text-align: center; background-color: white;">
 									<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
@@ -95,7 +183,7 @@
 									</div>
 								</div>
 								<p>
-								After using this spectrometer to determine chemical kinetics parameters, I led the design and construction of the next-generation of laser, our first portable mid-infrared dual comb spectrometer (DCS), shrinking the footprint from an entire optical table to a few 19" rack-mountable boxes, as shown below. 
+								After the initial shock-tube measurements, I led the optical and mechanical redesign of the laboratory system into our first portable mid-infrared dual-comb spectrometer, reducing the footprint by more than 80% for rack deployment.
 								</p>
 								<div style="position: relative; width: 80%; margin: 0 auto;">
 								  <div style="padding-bottom: 60%; position: relative;">
@@ -107,7 +195,7 @@
 								</div>
 								<div style="height: 10px;"></div>
 								<p>
-								This is the first iteration of our design. The black box contains all electrical and fiber components (erbium fiber oscillators at 200 MHz, pump diodes, erbium-doped amplifiers, etc.) for each frequency comb laser, outputting femtosecond pulses of light 1-2 μm. We then use Intra-Pulse Difference Frequency Generation (IP-DFG), a technique developed by the Diddams group at NIST, in a bulk crystal PPLN to convert the near-infrared light from each frequency comb to mid-infrared light simultaneously spanning 3-5 μm. The generated pulses are combined and coupled into a mid-infrared optical fiber that can be routed to the measurement. My SolidWorks design shrunk the footprint by over 80% and is currently being used to generate MIR light, as shown below. When we're done, the lasers will be packaged for easy transportation to hypersonic engine test facilities, the arctic, and wherever our measurements are needed. 
+								Each channel begins with a stabilized near-infrared fiber comb and amplifier chain. We condition the femtosecond pulses in free space and use intra-pulse difference-frequency generation (IP-DFG) in PPLN to produce broadband 3–5 μm light. The two mid-infrared combs are then combined and delivered to the experiment. My SolidWorks redesign packaged the fiber hardware, nonlinear conversion, and free-space optics into rack-mountable modules while preserving the alignment and stability needed for dual-comb measurements. I also hired, trained, and mentored three interns who supported the redesign and deployment effort.
 								</p>
 								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
 									<img src="images/MIR free space.jpg" width="60%" height="auto" style="display: block; margin: 0 auto;">
@@ -119,8 +207,7 @@
 								
 								<h3>Improving Spectral Databases</h3>
 								<p>
-								Accurate spectral databases are crucial for calculating thermodynamic properties from spectral measurements. Dual comb spectroscopy (DCS) bridges the gap between low temperature (under 400 K), broadband (over 1000 cm<sup>-1</sup>) FTIR measurements and high-temperature (over 1000 K), narrow (under 5 cm<sup>-1</sup>) tunable diode laser measurements, and is the ideal spectrometer for validating and improving these absorption databases. Shown below is one of the 58 measurements that I took to improve our understanding of H<sub>2</sub>O absorption from 1.3-1.5 μm. Notice how DCS captures almost 200,000 spectral datapoints in a single measurement. 
-								</p>
+								Accurate spectral databases are just as important as the spectrometer itself. I collected 58 high-resolution H<sub>2</sub>O datasets spanning 300–1300 K to improve near-infrared absorption models used for combustion diagnostics and other high-temperature measurements. Dual-comb spectroscopy was especially useful because each measurement captured nearly 200,000 spectral points over a broad bandwidth while still resolving individual absorption features.
 								</p>
 								<div style="margin: 0 auto;">
 								  <video id="myVideo" loop muted playsinline style="width: 100%; height: auto; object-fit: cover;" poster="images/water data first image.png">
@@ -134,18 +221,19 @@
 								</div>
 								<div style="height: 20px;"></div>
 								<p>
-								Processing all of this information to improve our molecular absorption models proved to be quite the challenge. I optimized our lasers to measure 3x the spectral bandwidth with 10x less noise than our previous measurements in this region and was having trouble processing this large volume of information. The screenshots below show the Fortran-based software used in our community. This interface is fine for simple molecules but was difficult to navigate while processing the complex structure of H<sub>2</sub>O absorption. 
+								The improved measurements exposed a different bottleneck: analysis. I had increased the measured bandwidth by roughly 3× while reducing noise by about 10×, but the community Fortran fitting workflow was difficult to scale to the dense H<sub>2</sub>O spectrum. The example below shows the original interface I was working from.
+								</p>
 								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
 									<img src="images/H2O/Labfit Example.gif" width="100%" height="auto" style="display: block; margin: 0 auto;">
 								</div>
 								<p>
-								To overcome this challenge, I developed a custom Python wrapper for this Fortran solver. This allowed me to keep using this trusted resource but to do so hundreds of times faster than my predecessors. I went on to process 24,118 parameters for over 6,000 unique quantum transitions. Shown below is a small sample of the improvements made to the database. 
+								To make that analysis tractable, I developed an object-oriented Python library and GUI around the trusted Fortran solver. The workflow reduced processing time from months to about two weeks and cut database errors from 23% to 1%. I ultimately processed 24,118 parameters across more than 6,000 transitions; the resulting measurements and fits contributed to HITRAN2024. A small sample of the database improvements is shown below.
 								</p>
 								<div style="margin-bottom: 10px; max-width: 100%; text-align: center;">
 									<img src="images/H2O/H2O database updated.gif" width="100%" height="auto" style="display: block; margin: 0 auto;">
 								</div>								
 								<p>
-								 Thanks for exploring this small sample of my work at the University of Colorado. I'm excited to see what comes next!
+								This work shaped how I approach optical systems today: the laser hardware, controls, metrology, and analysis tools all have to be designed around the measurement you ultimately want to make.
 								</p>
 							</article>
 
@@ -153,13 +241,13 @@
 							<article id="connect">
 							<h2 class="major">Connect</h2>
 							  <p>
-							  Please reach out if you would like to chat about lasers, spectroscopy, or anything else. My email is <a href="mailto:scott.egbert@colorado.edu">scott.egbert@colorado.edu</a>. 
+							  Please reach out if you would like to talk about stabilized lasers, frequency combs, phase-noise metrology, optical systems, or related work. My email is <a href="mailto:scottegbert219@gmail.com">scottegbert219@gmail.com</a>. 
 							  </p>
 							  <div>
 								<h3>Additional Links</h3>
 								<ul class="connect-icons">
 									<li><i class="fab fa-linkedin"></i>&emsp;&nbsp;<a href="https://www.linkedin.com/in/scott-egbert/" target="_blank">LinkedIn</a></li>
-									<li><i class="fab fa-github"></i>&emsp;&nbsp;<a href="https://github.com/scegbert" target="_blank">Github</a></li>
+									<li><i class="fab fa-github"></i>&emsp;&nbsp;<a href="https://github.com/scegbert" target="_blank">GitHub</a></li>
 									<li><i class="fas fa-id-card"></i>&emsp;&nbsp;<a href="images/ScottEgbertResume.pdf" target="_blank">Resume</a></li>
 									<li><i class="fab fa-google"></i>&emsp;&nbsp;<a href="https://scholar.google.com/citations?user=s9CybPcAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
 								</ul>
@@ -227,7 +315,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									</ul>
 
 									<h4>Actions</h4>

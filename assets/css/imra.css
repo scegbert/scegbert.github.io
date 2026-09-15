@@ -1,0 +1,23 @@
+/* IMRA figures follow the existing research article layout. */
+#header .home-specialties { display: block; margin-top: 1rem; }
+#imra .imra-role { margin-top: -0.5rem; }
+#imra h3 { margin-top: 2.5rem; }
+#imra h4 { margin-top: 1.75rem; }
+#imra .imra-figure { margin: 0 0 2rem; }
+#imra .imra-figure > a {
+    display: block;
+    padding: 0.75rem;
+    background: #fff;
+    border: 0;
+    border-radius: 2px;
+}
+#imra .imra-figure img { display: block; width: 100%; height: auto; }
+#imra .imra-figure-narrow > a { max-width: 24rem; margin: 0 auto; }
+#imra figcaption { margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.6; }
+#imra .imra-references { font-size: 0.875rem; overflow-wrap: anywhere; }
+#imra .imra-references li { padding-left: 0.25rem; margin-bottom: 0.75rem; }
+#imra a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+@media screen and (max-width: 480px) {
+    #intro h2.major, #imra h2.major { max-width: 100%; font-size: 1.25rem; letter-spacing: 0.25rem; }
+    #imra .imra-figure > a { padding: 0.35rem; }
+}
